@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge-Based Search Retrieval System</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="../static/images/XYGen.png" class="logo">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('upload') }}">Upload File</a></li>
+                <li><a href="{{ url_for('pdfchat') }}">File Chat</a></li>
+            </ul>
+        </nav>
+        
+        <div class="left">
+            <div class="search">
+                <h2>Search Documents</h2>
+                <p>Enter a single word or a sentence to search for relevant documents.</p>
+                <form method="post">
+                    <!-- <label for="query">Enter search query:</label> -->
+                    <input type="text" name="search_term" placeholder="Enter Search Query ...." required><br>
+                    <button type="submit" class="search-btn">Search</button>
+                </form>
+            </div>
+        </div>
+        
+        {% if search_results %}
+        <div class="right">
+            <div class="results">
+                <h3>Search Results</h3>
+                    <div class="output">
+                        <p><b>Search Term: </b>{{ search_term }}</p>
+                        <p style="margin-top: 15px;"><b>Summary: </b></p>
+                        <ul class="scroll" style="margin-top: 5px;">
+                            <li style="margin-left: 25px;">{{ llm_response }}</li>
+                        </ul>
+                        {% for file_name, total_occurrences, page_occurrences in search_results %}
+                        <p style="margin-top: 15px;"><b>File Name: </b>{{ file_name }}</p>
+                        <p style="margin-top: 15px;"><b>Total occurrences: </b>{{ total_occurrences }}</p>
+                        <p style="margin-top: 15px;"><b>Page occurrences: </b></p>
+                        <ul style="margin-left: 30px; margin-top: 5px;">
+                            {% for page_num, count in page_occurrences %}
+                                <li><b>Page {{ page_num }}: </b>{{ count }} occurrences</li>
+                            {% endfor %}
+                        </ul>
+                        {% endfor %}
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+[{
+  "_id": {
+    "$oid": "66c88abda7b8334eeee54797"
+  },
+  "name": "budget_speech.pdf",
+  "type": "financial-document",
+  "notes": "Budget Speech 2023-2024 - Government of India ",
+  "page_count": 58,
+  "location": "D:\\Assessments\\XYGen.ai\\uploads\\budget_speech.pdf"
+},
+{
+  "_id": {
+    "$oid": "66c88caaa7b8334eeee54798"
+  },
+  "name": "Documenting_Medical_Records_Handbook_for_Doctors.pdf",
+  "type": "medical-document",
+  "notes": "Documenting medical records A handbook for doctors from Health Information Systems Knowledge Hub",
+  "page_count": 36,
+  "location": "D:\\Assessments\\XYGen.ai\\uploads\\Documenting_Medical_Records_Handbook_for_Doctors.pdf"
+},
+{
+  "_id": {
+    "$oid": "66c88d83a7b8334eeee54799"
+  },
+  "name": "Financial-Regulation-English.pdf",
+  "type": "financial-document",
+  "notes": "The Financial Regulations of the Government of Sri Lanka.",
+  "page_count": 344,
+  "location": "D:\\Assessments\\XYGen.ai\\uploads\\Financial-Regulation-English.pdf"
+},
+{
+  "_id": {
+    "$oid": "66c890f4a7b8334eeee5479a"
+  },
+  "name": "Insurance_Handbook_20103.pdf",
+  "type": "insurance-document",
+  "notes": "Insurance Handbook - A guide to insurance: what it does and how it works",
+  "page_count": 205,
+  "location": "D:\\Assessments\\XYGen.ai\\uploads\\Insurance_Handbook_20103.pdf"
+},
+{
+  "_id": {
+    "$oid": "66c891eba7b8334eeee5479b"
+  },
+  "name": "Contemporary_issues_in_Finance.pdf",
+  "type": "financial-document",
+  "notes": "This research paper collection is the edited versions of the supervised theses of the undergraduates of the Department of Accountancy & Finance.",
+  "page_count": 161,
+  "location": "D:\\Assessments\\XYGen.ai\\uploads\\Contemporary_issues_in_Finance.pdf"
+},
+{
+  "_id": {
+    "$oid": "66c89472a7b8334eeee5479c"
+  },
+  "name": "IRMT_financial_recs.pdf",
+  "type": "financial-document",
+  "notes": "Guide of Managing Public Sector Records ",
+  "page_count": 137,
+  "location": "D:\\Assessments\\XYGen.ai\\uploads\\IRMT_financial_recs.pdf"
+},
+{
+  "_id": {
+    "$oid": "66c8957ca7b8334eeee5479d"
+  },
+  "name": "LB_Finance_PLC_Annual_Report_2022-23.pdf",
+  "type": "financial-document",
+  "notes": "LB Finance PLC annual Report of 2022-2023",
+  "page_count": 452,
+  "location": "D:\\Assessments\\XYGen.ai\\uploads\\LB_Finance_PLC_Annual_Report_2022-23.pdf"
+},
+{
+  "_id": {
+    "$oid": "66c8964fa7b8334eeee5479e"
+  },
+  "name": "Medical_documentation_-_Nan_Sharafi.pdf",
+  "type": "medical-document",
+  "notes": "Medical documentation by sharafi",
+  "page_count": 13,
+  "location": "D:\\Assessments\\XYGen.ai\\uploads\\Medical_documentation_-_Nan_Sharafi.pdf"
+},
+{
+  "_id": {
+    "$oid": "66c896a5a7b8334eeee5479f"
+  },
+  "name": "basic-understanding-of-a-companys-financials.pdf",
+  "type": "financial-document",
+  "notes": "Basic understanding of a company’s financial statements - Guide",
+  "page_count": 35,
+  "location": "D:\\Assessments\\XYGen.ai\\uploads\\basic-understanding-of-a-companys-financials.pdf"
+},
+{
+  "_id": {
+    "$oid": "66c94e1393347c857ca6bc37"
+  },
+  "name": "Health_Insurance_Handbook.pdf",
+  "type": "insurance-document",
+  "notes": "Health insurance Handbook",
+  "page_count": 140,
+  "location": "D:\\Assessments\\XYGen.ai\\uploads\\Health_Insurance_Handbook.pdf"
+}]

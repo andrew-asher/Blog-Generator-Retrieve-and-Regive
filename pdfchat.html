@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge-Based Search Retrieval System</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="../static/images/XYGen.png" class="logo">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('upload') }}">Upload File</a></li>
+                <li><a href="{{ url_for('search') }}">Document Search</a></li>
+            </ul>
+        </nav>
+        <div class="left">
+            <div class="search">
+                <h2>Chat with Documents</h2>
+                <p>Ask your questions here and let our system find the answers for you!</p>
+                <form method="post">
+                    <!-- <label for="query">Enter search query:</label> -->
+                    <input type="text" name="question" placeholder="Enter Questions ...." required><br>
+                    <button type="submit" class="search-btn">Search</button>
+                </form>
+            </div>
+        </div>
+        
+        {% if response %}
+        <div class="right">
+            <div class="results">
+                <h3>Results</h3>
+                <div class="output">
+                    <p style="line-height: 25px;"><b>Question: </b>{{ question }}</p>
+                    <p style="margin-top: 15px;"><b>Response: </b></p>
+                    <ul class="res-scroll">
+                        <li style="margin-left: 25px; margin-top: 5px;">{{ response }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

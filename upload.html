@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge-Based Search Retrieval System</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="../static/images/XYGen.png" class="logo">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('search') }}">Document Search</a></li>
+                <li><a href="{{ url_for('pdfchat') }}">File Chat</a></li>
+            </ul>
+        </nav>
+        
+        <div class="wrapper">
+            <h2>Upload a New Document</h2>
+            <form method="post" enctype="multipart/form-data">
+                <label for="file">Choose PDF files:</label>
+                <input type="file" name="file" id="files" accept=".pdf" required><br>
+                <label for="report_type">Report Type:</label>
+                <select name="report_type" required>
+                    <option value="insurance-document">Insurance</option>
+                    <option value="medical-document">Medical</option>
+                    <option value="legal-document">Legal Document</option>
+                    <option value="financial-document">Financial</option>
+                    <option value="research-document">Research Papers</option>
+                    <option value="other-document">Others</option>
+                </select><br>
+                <label for="notes">Additional Notes:</label>
+                <textarea name="notes" rows="4" required></textarea><br>
+                <button type="submit" class="submit">Upload</button>
+            </form>
+            {% if message %}
+            <div class="popup">
+                {% if message == "Success" %}
+                    <img src="../static/images/sucess-icon.png">
+                    <h3>Thank You!</h3>
+                    <p>Your file has been successfully uploaded. Thanks!</p>
+                    <button type="button"><a href="{{ url_for('upload') }}">OK</a></button>
+                {% else %}
+                    <img src="../static/images/failed-icon.png">
+                    <h3>Sorry!</h3>
+                    <p>Your file upload has failed. Please go and try again.</p>
+                    <button type="button" class="failed"><a href="{{ url_for('upload') }}">OK</a></button>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
